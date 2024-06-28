@@ -1,6 +1,7 @@
 :root {
     --header-footer-color: #2f2d2b;
     --main-color: #272322;
+    --project-card-width: 250px;
     color: whitesmoke;
 }
 
@@ -58,6 +59,10 @@ header {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.project-thumbnail {
+    width: var(--project-card-width);
 }
 
 .test {
