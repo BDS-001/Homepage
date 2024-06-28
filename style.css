@@ -1,7 +1,26 @@
+:root {
+    --header-footer-color: #1f240a;
+    --main-color: whitesmoke;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: blue;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header, footer {
+    min-height: 50px;
+    background-color: var(--header-footer-color);
+    color: whitesmoke;
 }
 
 /* Adjust styles for smaller screens */
@@ -21,6 +40,17 @@ body {
 /* Adjust styles for larger screens */
 @media screen and (min-width: 901px) {
     body {
-        background-color: darkgoldenrod;
+        background-color: var(--main-color);
     }
+}
+
+.test {
+    width: 100px;
+    height: 80px;
+    background-color: #efd8a1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.5);
 }
