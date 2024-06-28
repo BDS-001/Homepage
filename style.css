@@ -3,3 +3,24 @@ body {
     padding: 0;
     background-color: blue;
 }
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 600px) {
+    body {
+        background-color: darkred;
+    }
+}
+
+/* Adjust styles for medium-sized screens */
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    body {
+        background-color: darkgreen;
+    }
+}
+
+/* Adjust styles for larger screens */
+@media screen and (min-width: 901px) {
+    body {
+        background-color: darkgoldenrod;
+    }
+}
