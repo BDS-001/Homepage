@@ -1,12 +1,12 @@
 :root {
-    --header-footer-color: #1f240a;
-    --main-color: whitesmoke;
+    --header-footer-color: #2f2d2b;
+    --main-color: #272322;
+    color: whitesmoke;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: blue;
     
     display: flex;
     flex-direction: column;
@@ -15,12 +15,17 @@ body {
 
 main {
     flex: 1;
+    padding: 40px;
 }
 
 header, footer {
     min-height: 50px;
     background-color: var(--header-footer-color);
-    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: center;
 }
 
 /* Adjust styles for smaller screens */
@@ -44,13 +49,23 @@ header, footer {
     }
 }
 
+.anotha-one {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .test {
-    width: 100px;
+    min-width: 100px;
+    max-width: 250px;
     height: 200px;
-    background-color: #efd8a1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    background-color: #453e3c;
     border: 1px solid black;
-    box-shadow: 5px 5px 10px 2px rgba(136, 136, 136, 0.432);
+    display: flex;
+    flex-direction: column;
 }
