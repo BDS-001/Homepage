@@ -20,12 +20,12 @@ main {
     padding: 40px;
 }
 
-header, footer {
+.main-header, footer {
     min-height: 50px;
     background-color: var(--header-footer-color);
 }
 
-header {
+.main-header {
     display: flex;
     justify-content: center;
 }
@@ -68,6 +68,25 @@ header {
     flex: 1;
 }
 
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.project-header h3 {
+    margin: 0;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-links img {
+    height: 35px;
+}
 
 .project {
     min-width: 100px;
@@ -78,4 +97,5 @@ header {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
