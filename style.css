@@ -1,7 +1,8 @@
 :root {
     --header-footer-color: #2f2d2b;
     --main-color: #272322;
-    --project-card-width: 250px;
+    --project-card-width: 400px;
+    --project-card-height: 350px;
     color: whitesmoke;
 }
 
@@ -50,25 +51,29 @@ header {
     }
 }
 
-.anotha-one {
-    display: flex;
-    justify-content: center;
-}
-
 .projects-container {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.project-thumbnail {
-    width: var(--project-card-width);
+.project-info-container {
+    padding: 10px;
 }
 
-.test {
+.project-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+}
+
+
+.project {
     min-width: 100px;
-    max-width: 250px;
-    height: 200px;
+    max-width: var(--project-card-width);
+    min-height: 100px;
+    height: var(--project-card-height);
     background-color: #453e3c;
     border: 1px solid black;
     display: flex;
