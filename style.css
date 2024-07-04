@@ -24,8 +24,6 @@ body {
 main {
     flex: 1;
     padding: 40px;
-    display: grid;
-    justify-items: center;
 }
 
 .main-header, footer {
@@ -80,6 +78,7 @@ footer {
         margin: 100px 0px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
 
