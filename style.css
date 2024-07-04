@@ -1,9 +1,14 @@
 :root {
     --header-footer-color: #2f2d2b;
     --main-color: #272322;
-    --project-card-width: 400px;
+    --project-card-width: 350px;
     --project-card-height: 350px;
     color: whitesmoke;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 body {
@@ -23,6 +28,12 @@ main {
 .main-header, footer {
     min-height: 50px;
     background-color: var(--header-footer-color);
+}
+
+footer {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-header {
@@ -98,4 +109,12 @@ main {
     display: flex;
     flex-direction: column;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer img {
+    max-height: 400px;
+}
+
+.contact-links {
+    display: grid;
 }
