@@ -3,6 +3,7 @@
     --main-color: #272322;
     --project-card-width: 350px;
     --project-card-height: 350px;
+    --highlight-color: #453e3c;
     color: whitesmoke;
 }
 
@@ -35,6 +36,7 @@ footer {
     grid-template-columns: 1fr minmax(150px, 400px) minmax(150px, 400px) 1fr; /* Outer columns take up remaining space, inner columns have fixed or auto width */
     grid-gap: 10px; /* Adjust the gap between columns as needed */
     align-items: center;
+    padding: 10px;
 }
 
 .main-header {
@@ -54,12 +56,28 @@ footer {
     body {
         background-color: darkgreen;
     }
+
+    .about-me {
+        float: left;
+        margin: 100px 0px;
+    }
+    
+    .about-me-portrait {
+        height: 250px;
+        float: left;
+    }
 }
 
 /* Adjust styles for larger screens */
 @media screen and (min-width: 901px) {
     body {
         background-color: var(--main-color);
+    }
+
+    .about-me {
+        margin: 100px 0px;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -98,6 +116,7 @@ footer {
 
 .project-links img {
     max-height: 35px;
+    min-height: 25px;
 }
 
 .profile-links img {
@@ -109,7 +128,7 @@ footer {
     max-width: var(--project-card-width);
     min-height: 100px;
     height: var(--project-card-height);
-    background-color: #453e3c;
+    background-color: var(--highlight-color);
     border: 1px solid black;
     display: flex;
     flex-direction: column;
@@ -126,4 +145,18 @@ footer {
 
 .contact-links {
     display: grid;
+}
+
+.about-me {
+    margin: 50px 0px;
+}
+
+.about-me-portrait {
+    height: 250px;
+}
+
+.about-me-info-container {
+    padding: 20px;
+    background-color: var(--highlight-color);
+    max-width: 1000px;
 }
