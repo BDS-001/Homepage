@@ -23,7 +23,7 @@ body {
 
 main {
     flex: 1;
-    padding: 40px;
+    padding: 0px 40px 40px 40px;
 }
 
 .main-header, footer {
@@ -120,8 +120,12 @@ footer {
     min-height: 25px;
 }
 
-.profile-links img {
+.profile-links img, .about-me-links img {
     max-height: 55px;
+}
+
+.about-me-links {
+    text-align: right;
 }
 
 .project {
@@ -154,7 +158,7 @@ footer {
 }
 
 .about-me-portrait {
-    height: 250px;
+    height: 400px;
 }
 
 .about-me-info-container {
