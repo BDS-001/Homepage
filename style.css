@@ -49,6 +49,10 @@ footer {
     body {
         background-color: darkred;
     }
+
+    .about-me-links {
+        display: block;
+    }
 }
 
 /* Adjust styles for medium-sized screens */
@@ -58,13 +62,25 @@ footer {
     }
 
     .about-me {
-        float: left;
+        position: relative;
         margin: 100px 0px;
     }
     
     .about-me-portrait {
         height: 250px;
+        position: relative;
         float: left;
+        margin-top: -40px; /* Adjust this value to move the image up */
+        margin-left: -20px;
+
+    }
+
+    .about-me p {
+        margin: 0;
+    }
+
+    .about-me-links {
+        display: none;
     }
 }
 
@@ -79,6 +95,10 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .about-me-links {
+        display: block;
     }
 }
 
@@ -165,4 +185,8 @@ footer {
     padding: 20px;
     background-color: var(--highlight-color);
     max-width: 1000px;
+}
+
+.about-me-info-container h2 {
+    margin: 0;
 }
