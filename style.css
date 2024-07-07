@@ -15,6 +15,7 @@ a {
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--main-color);
     
     display: flex;
     flex-direction: column;
@@ -131,9 +132,6 @@ footer {
 
 /* Adjust styles for smaller screens */
 @media screen and (max-width: 600px) {
-    body {
-        background-color: darkred;
-    }
 
     .about-me-links {
         display: block;
@@ -159,9 +157,6 @@ footer {
 
 /* Adjust styles for medium-sized screens */
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-    body {
-        background-color: darkgreen;
-    }
 
     .about-me {
         position: relative;
@@ -188,9 +183,6 @@ footer {
 
 /* Adjust styles for larger screens */
 @media screen and (min-width: 901px) {
-    body {
-        background-color: var(--main-color);
-    }
 
     .about-me {
         margin: 100px 0px;
